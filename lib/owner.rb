@@ -54,7 +54,7 @@ class Owner
   end
   
   def walk_dogs
-    @pets.collect { |pet| if pet == dog  
+    @pets.collect { |pet| if pet = dog  
     then dog.mood == "happy" end }
   end 
   
