@@ -9,7 +9,7 @@ class Owner
   def initialize(name = "name")
     @owner = self
     @name = name 
-    unless self.name == name, self.name = @name
+    unless self.name == name do self.name = @name
     @pets = {:dogs => [], :cats => []}
    # save 
   end 
