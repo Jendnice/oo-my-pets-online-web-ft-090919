@@ -65,18 +65,18 @@ class Owner
   end 
   
   def sell_pets
-    self.dogs.collect do |pet, instance| 
-      instance.each do |pet|
-      pet.mood = "nervous" 
-      end
-      instances.clear
-     end 
-    self.cats.collect do |pet, instance| 
-      instance.each do |pet|
-      pet.mood = "nervous" 
-      end
-      instances.clear
-     end 
+    # self.dogs.collect do |pet, instance| 
+    #   instance.each do |pet|
+    #   pet.mood = "nervous" 
+    #   end
+    #   instances.clear
+    # end 
+    # self.cats.collect do |pet, instance| 
+    #   instance.each do |pet|
+    #   pet.mood = "nervous" 
+    #   end
+    #   instances.clear
+    # end 
    # self.cats.each do |pet| pet.mood = "nervous" end 
   end 
   
