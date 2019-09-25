@@ -71,13 +71,16 @@ class Owner
     self.dogs.each do |pet| pet.owner = nil end 
   end 
   
-  def list_pets
+#  def list_pets
   #  my_pets << self.cats
   #  my_pets << self.dogs 
-  binding pry 
-    puts "I have #{self.dogs.count} dog(s), and #{self.cats.count} cat(s)."
-  end 
+#  binding pry 
+ #   puts "I have #{self.dogs.count} dog(s), and #{self.cats.count} cat(s)."
+ # end 
   
+  def list_pets
+    "I have #{@pets[:dogs].length} dog(s), and #{@pets[:cats].length} cat(s)."
+  end
   
   
 end
