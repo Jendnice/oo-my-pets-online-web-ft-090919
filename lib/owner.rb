@@ -54,6 +54,7 @@ class Owner
   end
   
   def walk_dogs
+    binding.pry 
     @pets.collect { |pet| if pet = dog  
     then dog.mood == "happy" end }
   end 
