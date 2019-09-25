@@ -10,7 +10,7 @@ class Owner
     @owner = self
     @name = name
     @pets = {:dogs => [], :cats => []}
-   # save 
+    save 
   end 
 
   
@@ -27,7 +27,7 @@ class Owner
   end 
   
   def self.all 
-    @@all.uniq 
+    @@all
   end 
   
   def self.count
