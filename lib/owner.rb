@@ -65,20 +65,8 @@ class Owner
     cats_mood
   end 
   
-  
-  # describe "#walk_dogs" do
-  #     it "walks the dogs which makes the dogs' moods happy" do
-  #       dog = Dog.new("Daisy", @owner)
-  #       @owner.walk_dogs
-  #       expect(dog.mood).to eq("happy")
-  #     end
-  #   end
-  
- # def walk_dogs
-  #  @pets[:dogs].each do |dog|
-  #    dog.mood = "happy"
-  #  end
-  # end
+  def sell_pets
+    
   
 end
 
