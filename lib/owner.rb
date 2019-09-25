@@ -14,7 +14,7 @@ class Owner
    # save 
   end 
   
-  def name(name) 
+  def name
     self.name = name 
   end 
 
