@@ -48,7 +48,6 @@ class Owner
   
   def buy_cat(cat_name)
     @pets[:cats] << Cat.new(cat_name, @owner)
-    binding pry 
   end
   
   def buy_dog(dog_name)
@@ -68,7 +67,6 @@ class Owner
   def sell_pets
     self.dogs.each do |pet| pet.mood = "nervous" end
     self.cats.each do |pet| pet.mood = "nervous" end 
-    binding.pry
   end 
   
 end
