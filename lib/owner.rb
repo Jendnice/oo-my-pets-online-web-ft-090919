@@ -60,6 +60,11 @@ class Owner
     dogs_mood
   end 
   
+  def feed_cats
+    cats_mood = self.cats.each do |cat| cat.mood = "happy" end
+    cats_mood
+  end 
+  
   
   # describe "#walk_dogs" do
   #     it "walks the dogs which makes the dogs' moods happy" do
