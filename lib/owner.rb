@@ -72,8 +72,11 @@ class Owner
   end 
   
   def list_pets
-    my_pets << self.cats
-    my_pets
+  #  my_pets << self.cats
+  #  my_pets << self.dogs 
+    puts "I have #{self.dogs.count} dog(s), and #{self.cats.count} cat(s)."
+  end 
+  
   
   
 end
