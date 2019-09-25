@@ -10,7 +10,7 @@ class Owner
     @owner = self
   #  self.name = name 
     @pets = {:dogs => [], :cats => []}
-    save 
+   # save 
   end 
   
   def name(name = "Owner") 
