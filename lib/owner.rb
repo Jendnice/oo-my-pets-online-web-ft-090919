@@ -53,8 +53,8 @@ class Owner
     @pets << Dog.new(dog_name, self)
   end
   
-  def walk_dogs
-    @pets.collect { |pet| if self == dog, 
+#  def walk_dogs
+ #   @pets.collect { |pet| if self == dog, 
   
 end
 
