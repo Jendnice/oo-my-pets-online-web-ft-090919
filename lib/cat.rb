@@ -5,10 +5,10 @@
   
   @@all_cats = []
   
-  def initialize(name, owner, mood = "nervous")
+  def initialize(name, owner)
     @name = name 
     @owner = owner
-    @mood = mood  
+    @mood = "nervous"
     save
   end 
   
