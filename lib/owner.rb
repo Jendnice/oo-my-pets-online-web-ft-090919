@@ -49,7 +49,8 @@ class Owner
   end
   
    def buy_dog(dog_name)
-    @pets << Dog.new(dog_name, self)
+    dog = Dog.new(dog_name, self)
+    @pets << dog
   end
   
   def walk_dogs
