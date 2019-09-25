@@ -56,8 +56,7 @@ class Owner
   end
   
   def walk_dogs
-    binding.pry
-    dogs_mood = pets[:dogs].select { |dog| dog.mood == "happy" }
+    dogs_mood = pets[:dogs].select { |dog| dog.mood = "happy" }
     dogs_mood
   end 
   
