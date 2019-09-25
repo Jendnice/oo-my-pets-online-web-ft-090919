@@ -13,9 +13,9 @@ class Owner
    # save 
   end 
   
-  def name(name = "Owner") 
-    self.name = name 
-  end 
+  # def name(name = "Owner") 
+  #   self.name = name 
+  # end 
 
 end
 
