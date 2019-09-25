@@ -56,7 +56,8 @@ class Owner
   end
   
   def walk_dogs
-    @pets[:dogs].each do |dog| dog.mood = "happy" end
+    dogs_mood = @pets[:dogs].select do |dog| dog.mood = "happy" end
+    dogs_mood
   end 
   
   
