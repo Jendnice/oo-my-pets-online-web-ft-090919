@@ -71,6 +71,9 @@ class Owner
     self.dogs.each do |pet| pet.owner = nil end 
   end 
   
+  def list_pets
+    my_pets << self.cats
+    my_pets
   
   
 end
