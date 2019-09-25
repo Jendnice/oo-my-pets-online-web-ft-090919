@@ -52,9 +52,18 @@ class Owner
     @pets << Dog.new(dog_name, self)
   end
   
-#  def walk_dogs
- #   @pets.collect { |pet| if self == dog, 
+  def walk_dogs
+    @pets.collect { |pet| if self == dog
+    then dog.mood 
   
+  
+   describe "#walk_dogs" do
+      it "walks the dogs which makes the dogs' moods happy" do
+        dog = Dog.new("Daisy", @owner)
+        @owner.walk_dogs
+        expect(dog.mood).to eq("happy")
+      end
+    end
 end
 
 
