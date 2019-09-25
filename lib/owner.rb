@@ -64,7 +64,7 @@ class Owner
     cats_mood
   end 
   
-  def sell_pets
+ # def sell_pets
     # self.dogs.collect do |pet, instance| 
     #   instance.each do |pet|
     #   pet.mood = "nervous" 
@@ -77,9 +77,18 @@ class Owner
     #   end
     #   instances.clear
     # end 
-   self.cats.each do |pet| pet.mood = "nervous" end
-   self.dogs.each do |pet| pet.mood = "nervous" end
-  end 
+#   self.cats.each do |pet| pet.mood = "nervous" end
+ #  self.dogs.each do |pet| pet.mood = "nervous" end
+ # end 
+  
+  def sell_pets
+    @pets.collect do |species, instances|
+      instances.each do |pet|
+        pet.mood = "nervous"
+      end
+      instances.clear
+    end
+  end
   
 end
 
