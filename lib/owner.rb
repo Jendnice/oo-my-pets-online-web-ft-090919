@@ -9,7 +9,8 @@ class Owner
   def initialize(name = "Owner")
     @owner = self
     @name = name 
-   # self.name = name 
+    self.name = name
+    self.name.frozen
     @pets = {:dogs => [], :cats => []}
    # save 
   end 
