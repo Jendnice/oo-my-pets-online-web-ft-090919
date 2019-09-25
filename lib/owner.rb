@@ -6,7 +6,7 @@ class Owner
   
   @@all = []
   
-  def initialize(name = "Owner")
+  def initialize("Owner")
     @owner = self
     self.name = name 
     @pets = {:dogs => [], :cats => []}
