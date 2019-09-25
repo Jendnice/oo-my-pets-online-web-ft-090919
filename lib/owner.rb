@@ -8,7 +8,7 @@ class Owner
   
   def initialize(owner = "Owner")
     @owner = Owner.new
-    owner.name = "Owner"
+    @owner.name = "Owner"
     @pets = {:dogs => [], :cats => []}
     save 
   end 
