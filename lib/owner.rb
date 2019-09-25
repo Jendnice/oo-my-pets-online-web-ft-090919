@@ -10,7 +10,7 @@ class Owner
     @owner = self
     @name = name 
   #  self.name = @name 
-   if self.name != name do self.name = @name end 
+   if self.name != name do self.name = @name 
     @pets = {:dogs => [], :cats => []}
    # save 
   end 
