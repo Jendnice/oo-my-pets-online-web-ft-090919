@@ -5,12 +5,11 @@ class Owner
   attr_reader :species, :name
   
   @@all = []
-  @pets = {:dogs => [], :cats => []}
   
   def initialize(name)
     @owner = self
     @name = name
-   # @pets = {:dogs => [], :cats => []}
+    @pets = {:dogs => [], :cats => []}
     save 
   end 
 
@@ -49,7 +48,7 @@ class Owner
   
   def buy_cat(cat_name)
     @pets[:cats] << Cat.new(cat_name, self)
-    binding.pry
+    binding pry 
   end
   
   def buy_dog(dog_name)
