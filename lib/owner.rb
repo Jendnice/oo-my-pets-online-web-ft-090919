@@ -7,8 +7,9 @@ class Owner
   @@all = []
   
   def initialize(name = "Owner")
-    @name = name
-    @owner = @name 
+   # @name = name
+    @owner = owner
+    @owner.name = name 
     @pets = []
     save 
   end 
