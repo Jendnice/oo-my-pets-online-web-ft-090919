@@ -2,15 +2,13 @@ require 'pry'
 
 class Owner
   attr_accessor 
-  attr_reader :name, :species, :owner
+  attr_reader :name, :species, :name 
   
   @@all = []
   
   def initialize(name = "Owner")
-   # @name = name
-    @owner = owner
-    owner = Owner.new(name)
-  #  @owner.name = name 
+    @name = name
+    @owner.name = name 
     @pets = []
     save 
   end 
