@@ -8,7 +8,8 @@ class Owner
   
   def initialize(name = "Owner")
    # @name = name
-    @owner = Owner.new(name)
+    @owner = owner
+    owner = Owner.new(name)
   #  @owner.name = name 
     @pets = []
     save 
