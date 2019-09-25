@@ -39,19 +39,19 @@ class Owner
   end 
   
   def cats 
-    @cats = Cat.all.select { |cat| cat.owner == @owner }
+    @cats = Cat.all.select { |cat| cat.owner == self }
   end 
   
   def dogs 
-    @dogs = Dog.all.select { |dog| dog.owner == @owner }
+    @dogs = Dog.all.select { |dog| dog.owner == self }
   end 
   
   def buy_cat(cat_name)
-    @pets[:cats] << Cat.new(cat_name, @owner)
+    @pets[:cats] << Cat.new(cat_name, self)
   end
   
   def buy_dog(dog_name)
-    @pets[:dogs] << Dog.new(dog_name, @owner)
+    @pets[:dogs] << Dog.new(dog_name, self)
   end
   
   def walk_dogs
