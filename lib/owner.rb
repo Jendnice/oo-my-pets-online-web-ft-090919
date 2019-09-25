@@ -6,7 +6,7 @@ class Owner
   
   @@all = []
   
-  def initialize
+  def initialize(name)
     @owner = self
     @name = name 
   #  self.name = @name
