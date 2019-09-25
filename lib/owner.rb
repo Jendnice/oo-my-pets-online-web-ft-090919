@@ -7,12 +7,21 @@ class Owner
   @@all = []
   
   def initialize(name = "Owner")
-    @name = name
+    @owner = owner(@name = name)
     @pets = {:dogs => [], :cats => []}
     save 
   end 
   
-  
+
+  #   @owner = Owner.new("Victoria")
+  # end
+
+  # context 'Instance methods' do
+
+  #   describe "#name" do
+  #     it "can have a name" do
+  #       expect(@owner.name).to eq("Victoria")
+  #     end
   
   
   
