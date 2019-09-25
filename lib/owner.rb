@@ -77,7 +77,8 @@ class Owner
     #   end
     #   instances.clear
     # end 
-   # self.cats.each do |pet| pet.mood = "nervous" end 
+   self.cats.each do |pet| pet.mood = "nervous" end
+   
   end 
   
 end
