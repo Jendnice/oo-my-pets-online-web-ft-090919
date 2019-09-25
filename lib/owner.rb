@@ -50,13 +50,11 @@ class Owner
   
    def buy_dog(dog_name)
     dog = Dog.new(dog_name, self)
-    @pets << dog
+    @pets[:dogs] << dog
   end
   
   def walk_dogs
-    binding.pry 
-    @pets.collect { |pet| if pet = dog  
-    then dog.mood == "happy" end }
+    @pets[:dogs].collect { |dog| dog.mood == "happy" }
   end 
   
   
