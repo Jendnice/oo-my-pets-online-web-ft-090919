@@ -13,8 +13,6 @@ class Owner
    # save 
   end 
 
-end
-
   
   def save
     @@all << self 
