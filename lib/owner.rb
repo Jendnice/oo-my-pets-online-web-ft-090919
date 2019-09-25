@@ -6,10 +6,9 @@ class Owner
   
   @@all = []
   
-  def initialize(species)
+  def initialize(name)
     @owner = self
-    @species = species
-    self.name = @name 
+    @name = name
     @pets = {:dogs => [], :cats => []}
    # save 
   end 
